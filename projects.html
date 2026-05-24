@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;family=Hanken+Grotesk:wght@600;700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    
+    
+    
+    
+
+    <!-- Custom Styles & Scripts -->
+    <script src="assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" defer></script>
+
+</head>
+
+<body class="bg-background text-on-surface selection:bg-primary selection:text-on-primary">
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl shadow-sm border-b border-white/10">
+        <div class="max-w-container-max-width mx-auto flex justify-between items-center h-20 px-margin-desktop">
+            <div class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface">London Axion</div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="index.html">Home</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="services.html">Services</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="solutions.html">Solutions</a>
+                <a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="projects.html">Projects</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="about.html">About</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="contact.html">Contact</a>
+            </nav>
+            <button
+                class="bg-primary text-on-primary-container px-6 py-2.5 rounded-lg font-label-md text-label-md hover:scale-95 transition-transform active:scale-90">
+                Book a Call
+            </button>
+        </div>
+    </header>
+    <main class="pt-32">
+        <!-- Hero Section -->
+        <section class="max-w-container-max-width mx-auto px-margin-desktop mb-24 text-center">
+            <span
+                class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em] mb-4 block">Portfolio</span>
+            <h1 class="font-display-lg text-display-lg text-on-surface mb-6 max-w-4xl mx-auto">Engineering the <span
+                    class="text-primary italic">Digital Frontier</span></h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Explore our portfolio of high-impact technical solutions, from decentralized finance ecosystems to
+                AI-driven industrial intelligence.
+            </p>
+        </section>
+        <!-- Projects Grid Section -->
+        <section class="max-w-container-max-width mx-auto px-margin-desktop mb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Project 1: Global Logistics Platform -->
+                <div
+                    class="glass-card group flex flex-col rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            data-alt="A sprawling, high-tech automated shipping port at night with glowing blue and teal lights tracing the movement of cargo. Sophisticated holographic overlays show data streams and logistical pathways intersecting across the dark ocean surface. The atmosphere is professional, cinematic, and deeply technical with a deep navy and electric blue color palette."
+                            src="assets/images/img_a9f06a59.jpg" loading="lazy">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 rounded-full border border-secondary text-secondary text-[10px] font-label-sm bg-secondary/10">LOGISTICS</span>
+                            <span
+                                class="px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant text-[10px] font-label-sm">CLOUD
+                                ARCHITECTURE</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Global Logistics Platform
+                        </h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                            End-to-end supply chain orchestration using distributed ledger technology for real-time
+                            tracking across 4 continents.
+                        </p>
+                        <button class="flex items-center gap-2 font-label-md text-label-md text-primary group/btn">
+                            View Case Study
+                            <span
+                                class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project 2: NeoBank Experience -->
+                <div
+                    class="glass-card group flex flex-col rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            data-alt="A sleek digital banking interface displayed on multiple floating glass screens. The screens show abstract glowing financial data, intricate graphs, and biometric security indicators in shades of cyan and deep charcoal. Soft light leaks from the corners create a futuristic, high-end fintech aesthetic that feels secure and innovative."
+                            src="assets/images/img_5c0f86e5.jpg" loading="lazy">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 rounded-full border border-secondary text-secondary text-[10px] font-label-sm bg-secondary/10">FINTECH</span>
+                            <span
+                                class="px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant text-[10px] font-label-sm">MOBILE
+                                UX</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-3">NeoBank Experience</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                            A hyper-secure, mobile-first banking infrastructure designed for Gen-Z, featuring AI-driven
+                            personal finance insights.
+                        </p>
+                        <button class="flex items-center gap-2 font-label-md text-label-md text-primary group/btn">
+                            View Case Study
+                            <span
+                                class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project 3: AI Health Diagnostics -->
+                <div
+                    class="glass-card group flex flex-col rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            data-alt="A futuristic medical laboratory visualization featuring a glowing blue DNA double helix and complex neural network diagrams. Microscopic medical data is projected into a dark space with sharp precision and luminous accents of cyan. The imagery suggests high-level computational biology and medical artificial intelligence in a sterile, modern aesthetic."
+                            src="assets/images/img_eee1fbcc.jpg" loading="lazy">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 rounded-full border border-secondary text-secondary text-[10px] font-label-sm bg-secondary/10">AI/ML</span>
+                            <span
+                                class="px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant text-[10px] font-label-sm">HEALTH
+                                TECH</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-3">AI Health Diagnostics</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                            Computer vision model for early-stage pathology detection with 99.4% accuracy across
+                            clinical trials.
+                        </p>
+                        <button class="flex items-center gap-2 font-label-md text-label-md text-primary group/btn">
+                            View Case Study
+                            <span
+                                class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project 4: Smart City IoT Grid -->
+                <div
+                    class="glass-card group flex flex-col rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            data-alt="Top-down view of a futuristic smart city at dusk. Glowing neon lines trace the movement of traffic and energy distribution across a grid of sleek skyscrapers. The cityscape is bathed in cool navy and violet hues, with sharp white data points pulsing across the urban layout, representing a hyper-connected IoT ecosystem."
+                            src="assets/images/img_aede0ac1.jpg" loading="lazy">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 rounded-full border border-secondary text-secondary text-[10px] font-label-sm bg-secondary/10">IOT</span>
+                            <span
+                                class="px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant text-[10px] font-label-sm">DATA
+                                ENG</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Smart City IoT Grid</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                            Unified municipal data lake processing telemetry from 2.4 million sensors for real-time
+                            energy optimization.
+                        </p>
+                        <button class="flex items-center gap-2 font-label-md text-label-md text-primary group/btn">
+                            View Case Study
+                            <span
+                                class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project 5: Quantum Security Protocol -->
+                <div
+                    class="glass-card group flex flex-col rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            data-alt="An abstract visualization of quantum entanglement and cryptography. Luminous particles of light are linked by thin, glowing threads of cyan energy against a pitch-black background. The scene is sharp and highly detailed, with complex geometric nodes forming a protective shield-like pattern that conveys absolute security and technical depth."
+                            src="assets/images/img_2f376774.jpg" loading="lazy">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 rounded-full border border-secondary text-secondary text-[10px] font-label-sm bg-secondary/10">CYBERSECURITY</span>
+                            <span
+                                class="px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant text-[10px] font-label-sm">QUANTUM</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Quantum Security Protocol
+                        </h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                            Post-quantum encryption layer for enterprise communication systems, protecting against
+                            future decryptive threats.
+                        </p>
+                        <button class="flex items-center gap-2 font-label-md text-label-md text-primary group/btn">
+                            View Case Study
+                            <span
+                                class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project 6: Autonomous Fleet Core -->
+                <div
+                    class="glass-card group flex flex-col rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img alt=""
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            data-alt="A high-tech control center interface monitoring a fleet of autonomous robotic vehicles. The screen displays complex LIDAR maps, 3D environment scans, and heat-map data in neon blues and whites. In the background, the soft blur of a sleek robotic laboratory is visible, emphasizing a sophisticated industrial-automation setting."
+                            src="assets/images/img_eeaa1822.jpg" loading="lazy">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 rounded-full border border-secondary text-secondary text-[10px] font-label-sm bg-secondary/10">ROBOTICS</span>
+                            <span
+                                class="px-3 py-1 rounded-full border border-outline-variant text-on-surface-variant text-[10px] font-label-sm">EDGE
+                                COMPUTING</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Autonomous Fleet Core</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                            Edge-based navigation system for industrial autonomous drones, enabling obstacle avoidance
+                            in GPS-denied environments.
+                        </p>
+                        <button class="flex items-center gap-2 font-label-md text-label-md text-primary group/btn">
+                            View Case Study
+                            <span
+                                class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="max-w-container-max-width mx-auto px-margin-desktop mb-32">
+            <div class="glass-card rounded-2xl p-16 relative overflow-hidden text-center border-primary/20">
+                <div class="glow-overlay absolute inset-0 -z-10"></div>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Have a complex project in mind?</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+                    Our technical architects are ready to help you define and build the next generation of your software
+                    ecosystem.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button
+                        class="bg-primary text-on-primary-container px-10 py-4 rounded-lg font-label-md text-label-md hover:scale-105 transition-transform">
+                        Schedule Consultation
+                    </button>
+                    <button
+                        class="border border-secondary text-secondary px-10 py-4 rounded-lg font-label-md text-label-md hover:bg-secondary/5 transition-colors">
+                        View Technical Docs
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full pt-24 pb-12 bg-surface-container-lowest border-t border-white/5">
+        <div class="max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop">
+            <div class="col-span-1 md:col-span-2">
+                <div class="font-headline-md text-headline-md font-bold text-on-surface mb-6">London Axion</div>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-8">
+                    Precision-engineered software and strategic IT consultancy for the global enterprise.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-label-md text-label-md text-on-surface mb-4">Nav</h4>
+                <ul class="space-y-3 font-body-md text-body-md">
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                            href="index.html">Home</a></li>
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                            href="services.html">Services</a></li>
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                            href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-label-md text-label-md text-on-surface mb-4">Support</h4>
+                <ul class="space-y-3 font-body-md text-body-md">
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors"
+                            href="#"></a></li>
+                    <li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#"></a></li>
+                    <li class=""><a class="text-secondary hover:text-primary transition-colors" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-container-max-width mx-auto px-margin-desktop mt-16 pt-8 border-t border-white/5">
+            <p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">© 2024 London Axion IT
+                Consultancy. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

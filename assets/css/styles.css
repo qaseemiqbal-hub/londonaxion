@@ -1,0 +1,71 @@
+/* Base Styles */
+
+/* Common Glass Panel Effect */
+.glass-panel {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Electric Glow Variations */
+.electric-glow {
+    background: radial-gradient(circle at center, rgba(173, 198, 255, 0.08) 0%, transparent 70%);
+}
+
+.electric-glow-box {
+    box-shadow: 0 0 20px rgba(77, 142, 255, 0.2);
+}
+
+/* Navigation Blur */
+.nav-blur {
+    backdrop-filter: blur(12px);
+    background: rgba(5, 20, 36, 0.6);
+}
+
+/* Material Symbols Adjustments */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Scroll Fade-In Animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+/* FAQ Accordion Transitions */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-active .faq-icon {
+    transform: rotate(180deg);
+}
+
+/* Form Success/Error States */
+.form-success-msg, .form-error-msg {
+    display: none;
+}
+
+.form-success .form-success-msg {
+    display: block;
+}
+
+.form-success form {
+    display: none;
+}

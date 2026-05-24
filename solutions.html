@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;family=Hanken+Grotesk:wght@600;700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    
+    
+    
+    
+
+    <!-- Custom Styles & Scripts -->
+    <script src="assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" defer></script>
+
+</head>
+
+<body class="bg-background text-on-background selection:bg-primary/30">
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-white/10 shadow-sm">
+        <div class="max-w-container-max-width mx-auto flex justify-between items-center h-20 px-margin-desktop">
+            <span class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface">London
+                Axion</span>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="index.html">Home</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="services.html">Services</a>
+                <a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1"
+                    href="solutions.html">Solutions</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="projects.html">Projects</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="about.html">About</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    href="contact.html">Contact</a>
+            </div>
+            <button
+                class="bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full hover:scale-95 transition-transform active:scale-90">
+                Book a Call
+            </button>
+        </div>
+    </nav>
+    <main class="pt-32">
+        <!-- Hero Section -->
+        <section class="max-w-container-max-width mx-auto px-margin-desktop mb-32 relative overflow-hidden">
+            <div class="glow-aura absolute -top-40 -right-40 w-[600px] h-[600px] pointer-events-none"></div>
+            <div class="relative z-10 max-w-3xl">
+                <p class="font-label-sm text-label-sm text-secondary uppercase mb-4 tracking-widest">Industry Solutions
+                </p>
+                <h1 class="font-display-lg text-display-lg text-on-surface mb-6">Strategic Technology for Every Scale.
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    From agile startup environments to complex global enterprises, we engineer digital solutions that
+                    prioritize technical authority and market momentum.
+                </p>
+            </div>
+        </section>
+        <!-- Segment Bento Grid -->
+        <section class="max-w-container-max-width mx-auto px-margin-desktop mb-32">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <!-- Startups -->
+                <div
+                    class="md:col-span-4 glass-panel p-8 rounded-xl flex flex-col justify-between group hover:border-primary/50 transition-all">
+                    <div>
+                        <span class="material-symbols-outlined text-secondary text-4xl mb-6">rocket_launch</span>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Startups</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Accelerate from idea to
+                            market-ready product with our lean engineering framework.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                <span class="font-label-md text-label-md">MVP Fast-Track</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                <span class="font-label-md text-label-md">Scalable Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <img class="rounded-lg h-48 w-full object-cover grayscale group-hover:grayscale-0 transition-all"
+                            data-alt="A high-tech co-working space featuring young professionals working with advanced monitors in a neon-accented dark environment. The lighting is moody with electric blue highlights, reflecting a modern tech-driven startup culture. The scene is shot from a low angle to emphasize growth and innovation."
+                            src="assets/images/img_5d8604c6.jpg" loading="lazy">
+                    </div>
+                </div>
+                <!-- SMEs -->
+                <div
+                    class="md:col-span-4 glass-panel p-8 rounded-xl flex flex-col justify-between group hover:border-primary/50 transition-all">
+                    <div>
+                        <span class="material-symbols-outlined text-secondary text-4xl mb-6">settings_suggest</span>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-4">SMEs</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Bridge the gap between
+                            traditional operations and modern digital efficiency.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                <span class="font-label-md text-label-md">Legacy Modernization</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                <span class="font-label-md text-label-md">Cloud Migration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <img class="rounded-lg h-48 w-full object-cover grayscale group-hover:grayscale-0 transition-all"
+                            data-alt="A clean, industrial-chic office hallway with glowing server rack lights visible through a glass door. The aesthetic is professional and established, utilizing a palette of deep charcoal and cool blues. The lighting is focused and precise, suggesting a secure and optimized IT environment for a growing business."
+                            src="assets/images/img_e2364d2f.jpg" loading="lazy">
+                    </div>
+                </div>
+                <!-- Enterprise -->
+                <div
+                    class="md:col-span-4 glass-panel p-8 rounded-xl flex flex-col justify-between group hover:border-primary/50 transition-all">
+                    <div>
+                        <span class="material-symbols-outlined text-secondary text-4xl mb-6">hub</span>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Enterprise</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Large-scale system integration
+                            and custom R&amp;D for global market leaders.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                <span class="font-label-md text-label-md">Custom AI Solutions</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                <span class="font-label-md text-label-md">Global Data Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <img class="rounded-lg h-48 w-full object-cover grayscale group-hover:grayscale-0 transition-all"
+                            data-alt="A futuristic skyscraper's exterior reflecting a digital grid of light against a deep navy sky. The visual style is sleek and corporate, with sharp architectural lines and a cold, high-tech glow. The mood is powerful and expansive, representing global enterprise influence and technological dominance."
+                            src="assets/images/img_d0363723.jpg" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service Package Comparison -->
+        <section class="max-w-container-max-width mx-auto px-margin-desktop mb-32">
+            <h2 class="font-headline-lg text-headline-lg text-on-surface text-center mb-16">Service Package Comparison
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse glass-panel rounded-xl">
+                    <thead>
+                        <tr class="border-b border-white/5">
+                            <th class="p-8 font-label-md text-label-md text-secondary">FEATURE</th>
+                            <th class="p-8 font-label-md text-label-md text-on-surface">MVP (STARTUP)</th>
+                            <th class="p-8 font-label-md text-label-md text-on-surface">GROWTH (SME)</th>
+                            <th class="p-8 font-label-md text-label-md text-on-surface">CORE (ENTERPRISE)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="font-body-md text-body-md">
+                        <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                            <td class="p-8 text-on-surface font-medium">Timeline</td>
+                            <td class="p-8 text-on-surface-variant">8-12 Weeks</td>
+                            <td class="p-8 text-on-surface-variant">4-6 Months</td>
+                            <td class="p-8 text-on-surface-variant">Continuous</td>
+                        </tr>
+                        <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                            <td class="p-8 text-on-surface font-medium">Dedicated Team</td>
+                            <td class="p-8 text-on-surface-variant">Squad (3-5)</td>
+                            <td class="p-8 text-on-surface-variant">Multi-Squad (8-12)</td>
+                            <td class="p-8 text-on-surface-variant">Dedicated Dept.</td>
+                        </tr>
+                        <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                            <td class="p-8 text-on-surface font-medium">Support Level</td>
+                            <td class="p-8 text-on-surface-variant">Standard</td>
+                            <td class="p-8 text-on-surface-variant">24/7 Priority</td>
+                            <td class="p-8 text-on-surface-variant">L3 Managed Services</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition-colors">
+                            <td class="p-8 text-on-surface font-medium">Infrastructure</td>
+                            <td class="p-8 text-on-surface-variant">Serverless / Cloud</td>
+                            <td class="p-8 text-on-surface-variant">Hybrid / Scalable</td>
+                            <td class="p-8 text-on-surface-variant">Multi-Cloud / Edge</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="max-w-container-max-width mx-auto px-margin-desktop mb-32">
+            <div class="glass-panel p-12 md:p-24 rounded-2xl text-center relative overflow-hidden">
+                <div
+                    class="glow-aura absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] pointer-events-none">
+                </div>
+                <div class="relative z-10">
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">Ready to architect your future?
+                    </h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-12">
+                        Schedule a complimentary strategy session with our senior architects to discuss your custom
+                        roadmap.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                        <button
+                            class="bg-primary text-on-primary font-label-md text-label-md px-10 py-4 rounded-full hover:scale-105 transition-transform">
+                            Schedule Strategy Session
+                        </button>
+                        <button
+                            class="border border-secondary text-secondary font-label-md text-label-md px-10 py-4 rounded-full hover:bg-secondary/5 transition-colors">
+                            View Case Studies
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full pt-24 pb-12 bg-surface-container-lowest border-t border-white/5">
+        <div class="max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop">
+            <div class="md:col-span-1">
+                <span class="font-headline-md text-headline-md font-bold text-on-surface">London Axion</span>
+                <p class="mt-4 font-body-md text-body-md text-on-surface-variant">Pioneering precision engineering for
+                    global industry leaders.</p>
+            </div>
+            <div class="md:col-span-1">
+                <h4 class="font-label-md text-label-md text-on-surface mb-6 uppercase tracking-wider">Solutions</h4>
+                <ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+                    <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-1">
+                <h4 class="font-label-md text-label-md text-on-surface mb-6 uppercase tracking-wider">Company</h4>
+                <ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+                    <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-1">
+                <h4 class="font-label-md text-label-md text-on-surface mb-6 uppercase tracking-wider">Global Office</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                    Tech Tower East, Suite 500<br>
+                    Innovation District<br>
+                    Silicon Valley, CA
+                </p>
+            </div>
+        </div>
+        <div
+            class="max-w-container-max-width mx-auto px-margin-desktop mt-24 border-t border-white/5 pt-12 flex justify-between items-center flex-wrap gap-4">
+            <p class="font-body-md text-body-md text-on-surface-variant">© 2024 London Axion IT Consultancy. All rights
+                reserved.</p>
+            <div class="flex gap-6">
+                <span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">share</span>
+                <span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">hub</span>
+                <span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">code</span>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
