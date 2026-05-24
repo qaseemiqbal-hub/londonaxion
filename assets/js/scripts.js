@@ -78,30 +78,58 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (isValid) {
-                // Simulate success state
                 const submitBtn = form.querySelector('button[type="submit"]');
                 const originalText = submitBtn.innerHTML;
                 submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> Processing...';
                 submitBtn.disabled = true;
 
-                setTimeout(() => {
-                    const formContainer = form.parentElement;
-                    formContainer.classList.add('form-success');
-                    
-                    // If no success message element exists, create one
-                    if (!formContainer.querySelector('.form-success-msg')) {
-                        const msg = document.createElement('div');
-                        msg.className = 'form-success-msg text-center p-8';
-                        msg.innerHTML = `
-                            <div class="w-16 h-16 bg-primary/20 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span class="material-symbols-outlined text-3xl">check_circle</span>
-                            </div>
-                            <h3 class="font-headline-md text-2xl mb-2 text-on-surface">Message Received</h3>
-                            <p class="text-on-surface-variant">Our team will get back to you within 24 hours.</p>
-                        `;
-                        formContainer.appendChild(msg);
+                // Extract values using FormData
+                const formData = new FormData(form);
+                const payload = Object.fromEntries(formData.entries());
+
+                // Send POST request asynchronously
+                fetch('/api/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        const formContainer = form.parentElement;
+                        formContainer.classList.add('form-success');
+                        
+                        if (!formContainer.querySelector('.form-success-msg')) {
+                            const msg = document.createElement('div');
+                            msg.className = 'form-success-msg text-center p-8';
+                            msg.innerHTML = `
+                                <div class="w-16 h-16 bg-primary/20 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <span class="material-symbols-outlined text-3xl text-primary">check_circle</span>
+                                </div>
+                                <h3 class="font-headline-md text-2xl mb-2 text-on-surface">Message Received</h3>
+                                <p class="text-on-surface-variant">Our team will get back to you within 24 hours.</p>
+                            `;
+                            formContainer.appendChild(msg);
+                        }
+                    } else {
+                        return response.json().then(errData => {
+                            throw new Error(errData.error || 'Failed to submit form');
+                        });
                     }
-                }, 1500);
+                })
+                .catch(error => {
+                    console.error('Submission Error:', error);
+                    // Show a beautiful error state on the button
+                    submitBtn.innerHTML = `<span class="material-symbols-outlined">error</span> Submission Failed`;
+                    submitBtn.classList.add('bg-error-container', 'text-on-error-container');
+                    
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.classList.remove('bg-error-container', 'text-on-error-container');
+                        submitBtn.disabled = false;
+                    }, 3000);
+                });
             }
         });
     });

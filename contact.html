@@ -84,32 +84,31 @@
                     <form class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="space-y-2">
-                                <label class="font-label-md text-label-md text-on-surface-variant uppercase">Full
+                                <label class="font-label-md text-label-md text-on-surface-variant uppercase" for="contact-name">Full
                                     Name</label>
-                                <input required
+                                <input required name="name" id="contact-name"
                                     class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                                     placeholder="John Doe" type="text">
                             </div>
                             <div class="space-y-2">
-                                <label class="font-label-md text-label-md text-on-surface-variant uppercase">Email
+                                <label class="font-label-md text-label-md text-on-surface-variant uppercase" for="contact-email">Email
                                     Address</label>
-                                <input required
+                                <input required name="email" id="contact-email"
                                     class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                                     placeholder="john@company.com" type="email">
                             </div>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="space-y-2">
-                                <label
-                                    class="font-label-md text-label-md text-on-surface-variant uppercase">Company</label>
-                                <input
+                                <label class="font-label-md text-label-md text-on-surface-variant uppercase" for="contact-company">Company</label>
+                                <input name="company" id="contact-company"
                                     class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                                     placeholder="TechCorp Inc." type="text">
                             </div>
                             <div class="space-y-2">
-                                <label class="font-label-md text-label-md text-on-surface-variant uppercase">Service
+                                <label class="font-label-md text-label-md text-on-surface-variant uppercase" for="contact-interest">Service
                                     Interest</label>
-                                <select
+                                <select name="interest" id="contact-interest"
                                     class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none">
                                     <option>Cloud Infrastructure</option>
                                     <option>Custom Software Development</option>
@@ -119,9 +118,9 @@
                             </div>
                         </div>
                         <div class="space-y-2">
-                            <label class="font-label-md text-label-md text-on-surface-variant uppercase">Project
+                            <label class="font-label-md text-label-md text-on-surface-variant uppercase" for="contact-brief">Project
                                 Brief</label>
-                            <textarea required
+                            <textarea required name="brief" id="contact-brief"
                                 class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                                 placeholder="Describe your technical objectives and timeline..." rows="4"></textarea>
                         </div>
