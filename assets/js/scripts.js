@@ -159,4 +159,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+    // 6. Cal.com Embed Integration
+    (function (C, A, L) { 
+        C.Cal = C.Cal || function () { (C.Cal.q = C.Cal.q || []).push(arguments) }; 
+        var e = A.createElement(L); 
+        var n = A.getElementsByTagName(L)[0]; 
+        e.src = "https://embed.cal.com/embed/embed.js"; 
+        e.async = true; 
+        n.parentNode.insertBefore(e, n); 
+    })(window, document, "script");
+    
+    Cal("init", { origin: "https://cal.com" });
+    Cal("ui", {
+        "styles": {
+            "branding": {
+                "brandColor": "#000000"
+            }
+        },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+    });
 });
