@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>London Axion | Enterprise IT Services & Custom Software Solutions</title>
+    <meta name="description" content="London Axion Digital provides precision-engineered IT services, cloud infrastructure migrations, custom software development, and automation for modern enterprise growth.">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;family=Hanken+Grotesk:wght@600;700&amp;display=swap"
@@ -28,10 +30,10 @@
 
 <body class="bg-background text-on-surface font-body-md selection:bg-primary/30">
     <!-- TopNavBar -->
-    <nav class="fixed top-0 w-full z-50 border-b border-white/10 shadow-sm bg-surface/60 backdrop-blur-xl">
+    <nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-white/10 shadow-sm">
         <div class="max-w-container-max-width mx-auto flex justify-between items-center h-20 px-margin-desktop">
             <div class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface">London Axion</div>
-            <div class="hidden md:flex items-center gap-8">
+            <div class="hidden md:flex gap-8 items-center">
                 <a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="index.html">Home</a>
                 <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
                     href="services.html">Services</a>
@@ -43,10 +45,13 @@
                     href="about.html">About</a>
                 <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
                     href="contact.html">Contact</a>
+                <button
+                    class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md hover:scale-95 transition-transform">Book
+                    a Call</button>
             </div>
-            <button
-                class="px-6 py-2 bg-primary-container text-on-primary-fixed font-label-md rounded-full hover:bg-primary transition-all active:scale-95">Book
-                a Call</button>
+            <button class="md:hidden text-on-surface">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
         </div>
     </nav>
     <main class="relative">
@@ -434,10 +439,9 @@
                 <div>
                     <h5 class="font-label-md text-on-surface mb-6 uppercase tracking-widest">Solutions</h5>
                     <ul class="space-y-4 text-on-surface-variant">
-                        <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
-                        <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
-                        <li class=""><a class="hover:text-primary transition-colors" href="#"></a>
-                        </li>
+                        <li class=""><a class="hover:text-primary transition-colors" href="services.html#web-dev">Web Development</a></li>
+                        <li class=""><a class="hover:text-primary transition-colors" href="services.html#cloud">Cloud Systems</a></li>
+                        <li class=""><a class="hover:text-primary transition-colors" href="services.html#automation">AI &amp; Automation</a></li>
                     </ul>
                 </div>
                 <div>
@@ -445,24 +449,25 @@
                     <ul class="space-y-4 text-on-surface-variant">
                         <li class=""><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
                         <li class=""><a class="hover:text-primary transition-colors" href="projects.html">Project Gallery</a></li>
-                        <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
+                        <li class=""><a class="hover:text-primary transition-colors" href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div>
                     <h5 class="font-label-md text-on-surface mb-6 uppercase tracking-widest">Support</h5>
                     <ul class="space-y-4 text-on-surface-variant">
-                        <li class=""><a class="hover:text-primary transition-colors" href="#"></a>
-                        </li>
-                        <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
-                        <li class=""><a class="hover:text-primary transition-colors" href="#"></a></li>
+                        <li class=""><a class="hover:text-primary transition-colors" href="contact.html">Get Support</a></li>
+                        <li class=""><a class="hover:text-primary transition-colors" href="about.html#operations">Our Offices</a></li>
+                        <li class=""><a class="hover:text-primary transition-colors" href="services.html">IT Roadmap</a></li>
                     </ul>
                 </div>
             </div>
             <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="text-on-surface-variant font-body-md text-sm">© 2024 London Axion IT Consultancy. All rights
-                    reserved.</div>
-                <div class="flex gap-8 text-on-surface-variant font-body-md text-sm">© 2024 London Axion IT Consultancy.
-                    All rights reserved.</div>
+                <div class="text-on-surface-variant font-body-md text-sm">© 2024 London Axion IT Consultancy. All rights reserved.</div>
+                <div class="flex gap-8 text-on-surface-variant font-body-md text-sm">
+                    <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                    <a class="hover:text-primary transition-colors" href="#">Cookie Policy</a>
+                </div>
             </div>
         </div>
     </footer>

@@ -69,3 +69,10 @@
 .form-success form {
     display: none;
 }
+
+/* Form Input Validation Error Styling */
+.border-error {
+    border-color: #ffb4ab !important; /* Soft error pink matching design token */
+    box-shadow: 0 0 0 2px rgba(255, 180, 171, 0.4) !important; /* Elegant subtle error glow */
+    outline: none !important;
+}

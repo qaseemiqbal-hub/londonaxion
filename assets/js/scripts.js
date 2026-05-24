@@ -5,13 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileMenuBtn && navLinksContainer) {
         mobileMenuBtn.addEventListener('click', () => {
+            const iconSpan = mobileMenuBtn.querySelector('.material-symbols-outlined');
             // Toggle classes to show/hide the menu on mobile
             if (navLinksContainer.classList.contains('hidden')) {
                 navLinksContainer.classList.remove('hidden');
                 navLinksContainer.classList.add('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-surface/95', 'backdrop-blur-xl', 'p-6', 'border-b', 'border-white/10', 'gap-4');
+                if (iconSpan) iconSpan.textContent = 'close';
             } else {
                 navLinksContainer.classList.add('hidden');
                 navLinksContainer.classList.remove('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-surface/95', 'backdrop-blur-xl', 'p-6', 'border-b', 'border-white/10', 'gap-4');
+                if (iconSpan) iconSpan.textContent = 'menu';
             }
         });
     }
