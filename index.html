@@ -47,6 +47,8 @@
                     href="contact.html">Contact</a>
                 <button
                     data-cal-link="london-axion/30min"
+                    data-cal-namespace="30min"
+                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
                     class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md hover:scale-95 transition-transform">Book
                     a Call</button>
             </div>
@@ -73,6 +75,8 @@
                     <div class="flex flex-wrap gap-4">
                         <button
                             data-cal-link="london-axion/30min"
+                            data-cal-namespace="30min"
+                            data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
                             class="px-8 py-4 bg-primary text-on-primary font-label-md rounded-lg hover:brightness-110 transition-all shadow-lg shadow-primary/20">Book
                             a Free Consultation</button>
                         <button
@@ -475,6 +479,13 @@
     </footer>
 
 
+    <!-- Cal element-click embed code begins -->
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "30min", {origin:"https://app.cal.com"});
+      Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
+    <!-- Cal element-click embed code ends -->
 </body>
 
 </html>
