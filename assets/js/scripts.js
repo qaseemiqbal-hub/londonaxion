@@ -160,24 +160,57 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 6. Cal.com Embed Integration
-    (function (C, A, L) { 
-        C.Cal = C.Cal || function () { (C.Cal.q = C.Cal.q || []).push(arguments) }; 
-        var e = A.createElement(L); 
-        var n = A.getElementsByTagName(L)[0]; 
-        e.src = "https://embed.cal.com/embed/embed.js"; 
-        e.async = true; 
-        n.parentNode.insertBefore(e, n); 
-    })(window, document, "script");
-    
-    Cal("init", { origin: "https://cal.com" });
-    Cal("ui", {
-        "styles": {
-            "branding": {
-                "brandColor": "#000000"
+    // 6. Bulletproof Cal.com Manual Event Binding & Fallback
+    document.querySelectorAll('[data-cal-link]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const link = btn.getAttribute('data-cal-link');
+            if (window.Cal) {
+                try {
+                    window.Cal("preload", { calLink: link });
+                    window.Cal("modal", { calLink: link });
+                } catch (err) {
+                    console.warn('Cal.com modal failed, falling back to new tab:', err);
+                    window.open(`https://cal.com/${link}`, '_blank');
+                }
+            } else {
+                window.open(`https://cal.com/${link}`, '_blank');
             }
-        },
-        "hideEventTypeDetails": false,
-        "layout": "month_view"
+        });
     });
+});
+
+// 7. Official Robust Cal.com Async Loader (Evaluated at top-level)
+(function (C, A, L) { 
+    let p = function (a, ar) { a.q.push(ar); }; 
+    let d = C.document; 
+    C.Cal = C.Cal || function () { 
+        let cal = C.Cal; 
+        let ar = arguments; 
+        if (!cal.loaded) { 
+            cal.ns = {}; 
+            cal.q = cal.q || []; 
+            d.head.appendChild(d.createElement("script")).src = A; 
+            cal.loaded = true; 
+        } 
+        if (ar[0] === L) { 
+            const api = function () { p(api, arguments); }; 
+            const namespace = ar[1]; 
+            api.q = api.q || []; 
+            typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); 
+            return; 
+        } 
+        p(cal, ar); 
+    }; 
+})(window, "https://embed.cal.com/embed/embed.js", "init");
+
+Cal("init", { origin: "https://cal.com" });
+Cal("ui", {
+    "styles": {
+        "branding": {
+            "brandColor": "#000000"
+        }
+    },
+    "hideEventTypeDetails": false,
+    "layout": "month_view"
 });
