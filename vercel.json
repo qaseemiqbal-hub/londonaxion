@@ -39,11 +39,11 @@
   "rewrites": [
     {
       "source": "/blog",
-      "destination": "https://londonaxion.gt.tc"
+      "destination": "https://wp.londonaxion.co.uk"
     },
     {
       "source": "/blog/:path*",
-      "destination": "https://londonaxion.gt.tc/:path*"
+      "destination": "https://wp.londonaxion.co.uk/:path*"
     }
   ]
 }
