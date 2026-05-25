@@ -35,5 +35,15 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/blog",
+      "destination": "https://londonaxion.gt.tc"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://londonaxion.gt.tc/:path*"
+    }
   ]
 }
